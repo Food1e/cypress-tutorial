@@ -17,7 +17,7 @@ const Header = () => {
           textAlign: "center",
         }}
 
-        data-test='todo-header'
+        data-set='todo-header'
       >
         todos
       </h1>

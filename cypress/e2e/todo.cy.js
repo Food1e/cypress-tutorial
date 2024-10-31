@@ -1,10 +1,10 @@
 describe("todo tests", () => {
   beforeEach(() => {
-    cy.visit("/");
+    cy.visit("http://localhost:5173");
   });
 
-  it("should render the todo app", () => {
-    cy.getDataTest("todo-header").should("exist");
+  it("Title is visible", () => {
+    cy.get('[data-set="todo-header"]').should("exist");
   });
 
   it("should add a todo", () => {
